@@ -64,6 +64,8 @@
 .task > .header > h1 {
     font-size: 1rem;
     margin: 0.5rem;
+    max-width: 17.5rem;
+    word-wrap: break-word;
 }
 
 .task > .header > span > .edit, .task > .header > span > .delete {
@@ -79,6 +81,45 @@
     background-color: #E2E2E2;
 }
 
+.task > .header > input {
+    margin: 0.5rem;
+    width: 100%;
+}
+
 .task > .desc {
     margin: 0 0.5rem 0.5rem 0.5rem;
+    max-width: 30rem;
+    word-wrap: break-word;
+}
+
+.task > .desc > textarea {
+    width: calc(100% - 0.375rem);
+    height: 3rem;
+    resize: none;
+    margin: 0 0.5rem 0 0;
+}
+
+.task > .editButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.task > .editButtons > .cancel, .task > .editButtons > .save {
+    flex: 1;
+    margin: 0.5rem;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task > .editButtons > .cancel {
+    background-color: #9C9A9A;
+    color: white;
+}
+
+.task > .editButtons > .save {
+    background-color: #3D7FDF;
+    color: white;
 }
